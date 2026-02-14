@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-zinc-800">
       <div className="absolute inset-0">
         <Image
-          src="/images/IMG_9130.jpg"
+          src={withBasePath("/images/IMG_9130.jpg")}
           alt="Hardline Hauling banner with services and phone number"
           fill
           priority

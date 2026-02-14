@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { NAV_LINKS, SITE } from "@/lib/site";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Header() {
   const pathname = usePathname();
@@ -15,7 +16,7 @@ export default function Header() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3" aria-label="Main navigation">
         <Link href="/" className="flex min-w-0 items-center gap-2 sm:gap-3" onClick={() => setOpen(false)}>
           <Image
-            src="/images/AC7C7A54-F087-4781-9ADD-510FF7993736.png"
+            src={withBasePath("/images/AC7C7A54-F087-4781-9ADD-510FF7993736.png")}
             alt="Hardline Hauling logo badge"
             width={42}
             height={42}

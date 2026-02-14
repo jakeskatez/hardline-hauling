@@ -1,3 +1,5 @@
+import { withBasePath } from "@/lib/basePath";
+
 export const SITE = {
   name: "Hardline Hauling",
   tagline: "Junk Removal",
@@ -47,27 +49,27 @@ export const SERVICES = [
 
 export const GALLERY_IMAGES = [
   {
-    src: "/images/IMG_8796.jpg",
+    src: withBasePath("/images/IMG_8796.jpg"),
     alt: "Hardline Hauling trailer loaded for a junk removal job close-up"
   },
   {
-    src: "/images/IMG_8795.jpg",
+    src: withBasePath("/images/IMG_8795.jpg"),
     alt: "Hardline Hauling trailer loaded for a junk removal job wide view"
   },
   {
-    src: "/images/IMG_8624.jpg",
+    src: withBasePath("/images/IMG_8624.jpg"),
     alt: "Hardline Hauling trailer at night after a cleanup job"
   },
   {
-    src: "/images/IMG_8464.jpg",
+    src: withBasePath("/images/IMG_8464.jpg"),
     alt: "Hardline Hauling driveway pickup with loaded trailer"
   },
   {
-    src: "/images/IMG_8463.jpg",
+    src: withBasePath("/images/IMG_8463.jpg"),
     alt: "Rear angle of loaded Hardline Hauling trailer"
   },
   {
-    src: "/images/IMG_9130.jpg",
+    src: withBasePath("/images/IMG_9130.jpg"),
     alt: "Hardline Hauling service banner with phone and offerings"
   }
 ];

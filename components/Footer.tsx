@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { NAV_LINKS, SITE } from "@/lib/site";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <Image
-              src="/images/AC7C7A54-F087-4781-9ADD-510FF7993736.png"
+              src={withBasePath("/images/AC7C7A54-F087-4781-9ADD-510FF7993736.png")}
               alt="Hardline Hauling logo"
               width={48}
               height={48}
